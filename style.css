@@ -1,0 +1,88 @@
+* {
+  object-fit: contain;
+}
+
+#card {
+  margin: auto;
+  max-width: 400px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+#beach {
+  width: 100%;
+  margin-bottom: -20px;
+}
+
+.button_bottom {
+  background-color: white;
+  position: absolute;
+  border: none;
+  height: 40px;
+  bottom: -10%;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 95%;
+}
+
+#save {
+  background-color: rgb(233, 38, 38);
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  min-height: 48px;
+  min-width: 70px;
+  border: none;
+  border-radius: 24px;
+  font-size: 100%;
+  top: -10%;
+  right: 5%;
+}
+
+#share,
+#options {
+  width: 40px;
+}
+
+#share {
+  left: 60%;
+}
+
+#options {
+  left: 80%;
+}
+
+#arrow {
+  width: 130px;
+  left: 5%;
+}
+
+button {
+  visibility: hidden;
+}
+
+#card:hover button {
+  visibility: visible;
+}
+
+button:hover {
+  background-image: linear-gradient(rgb(0 0 0/40%) 0 0);
+}
+
+#card:hover #beach {
+  filter: brightness(50%);
+}
+
+.button_bottom,
+#save {
+  transition: 0.5s;
+}
+
+#card:hover .button_bottom {
+  bottom: 3%;
+}
+
+#card:hover #save {
+  top: 3%;
+}
